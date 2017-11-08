@@ -1,14 +1,21 @@
 AllCops:
   DisplayCopNames: true
   DisplayStyleGuide: true
+  Exclude:
+    - lib/generators/**/templates/*.rb
+
+Style/AsciiComments:
+  Enabled: false
 
 Style/AlignParameters:
   EnforcedStyle: with_fixed_indentation
+  Enabled: true
 
 Style/ClassAndModuleChildren:
   EnforcedStyle: compact
   Exclude:
     - config/application.rb
+    - lib/generators/**/*.rb
 
 Style/Documentation:
   Enabled: false
@@ -31,6 +38,7 @@ Metrics/BlockLength:
   ExcludedMethods: []
   Exclude:
     - Guardfile
+    - spec/**/*_spec.rb
 
 Metrics/BlockNesting:
   CountBlocks: false
