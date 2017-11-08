@@ -1,0 +1,8 @@
+en:
+  activerecord:
+    models:
+      kuso: "Kuso"
+    attributes:
+      kuso:
+        id: "ID"
+        body: "Body"
