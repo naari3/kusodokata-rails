@@ -5,7 +5,11 @@ ENV['RAILS_ENV'] ||= 'test'
 
 if ENV['COVERAGE'] != 'no'
   require 'simplecov'
-  SimpleCov.start 'rails'
+  SimpleCov.start 'rails' do
+    add_filter 'lib/generators'
+  end
+
+  SimpleCov.formatter = SimpleCov::Formatter::HTMLFormatter
 end
 
 require File.expand_path('../../config/environment', __FILE__)
@@ -33,7 +37,7 @@ Dir[Rails.root.join('spec/support/**/*.rb')].each { |f| require f }
 
 # Checks for pending migration and applies them before tests are run.
 # If you are not using ActiveRecord, you can remove this line.
-ActiveRecord::Migration.maintain_test_schema!
+# ActiveRecord::Migration.maintain_test_schema!
 
 RSpec.configure do |config|
   # If you're not using ActiveRecord, or you'd prefer not to run each of your
@@ -59,5 +63,7 @@ RSpec.configure do |config|
   # Filter lines from Rails gems in backtraces.
   config.filter_rails_from_backtrace!
   # arbitrary gems may also be filtered via:
+  config.include ActiveJob::TestHelper
+  config.include ActiveSupport::Testing::TimeHelpers
   # config.filter_gems_from_backtrace("gem name")
 end

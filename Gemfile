@@ -8,6 +8,7 @@ end
 
 gem 'canonical-rails'
 gem 'coffee-rails', '~> 4.2'
+gem 'default_value_for'
 gem 'jbuilder', '~> 2.5'
 gem 'locale_kit'
 gem 'meta-tags'
@@ -33,6 +34,7 @@ group :development do
   gem 'guard-rspec', require: false
   gem 'letter_opener'
   gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'pry-rails'
   gem 'rubocop', require: false
   gem 'slim_lint', require: false
   gem 'spring'
@@ -51,7 +53,7 @@ group :development, :test do
 end
 
 group :test do
-  gem 'database_cleaner'
+  gem 'database_rewinder'
   gem 'rspec-power_assert'
   gem 'simplecov', require: false
 end
