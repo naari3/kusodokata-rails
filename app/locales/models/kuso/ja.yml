@@ -5,4 +5,5 @@ ja:
     attributes:
       kuso:
         id: "ID"
-        body: "Body"
+        unique_id: "UniqueId"
+        sentence: "Sentence"

@@ -1,7 +1,6 @@
-# frozen_string_literal: true
-
 FactoryBot.define do
   factory :kuso do
-    body { FFaker::LoremJA.paragraph }
+    unique_id { FFaker::LoremJA.sentence } 
+    sentence { FFaker::LoremJA.sentence }
   end
 end
