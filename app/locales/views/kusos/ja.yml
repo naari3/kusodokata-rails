@@ -1,0 +1,10 @@
+ja:
+  kusos:
+    index:
+      title: "Index"
+    show:
+      title: "Show"
+    new:
+      title: "New"
+    create:
+      title: "Create"

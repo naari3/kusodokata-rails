@@ -6,4 +6,4 @@ ja:
       kuso:
         id: "ID"
         unique_id: "UniqueId"
-        sentence: "Sentence"
+        body: "Body"

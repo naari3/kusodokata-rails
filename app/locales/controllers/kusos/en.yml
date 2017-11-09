@@ -1,0 +1,10 @@
+en:
+  kusos:
+    index:
+      key: "value"
+    show:
+      key: "value"
+    new:
+      key: "value"
+    create:
+      key: "value"
