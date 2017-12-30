@@ -21,8 +21,8 @@ gem 'rails', '~> 5.1.4'
 gem 'rails-i18n'
 gem 'ridgepole'
 gem 'sass-rails', '~> 5.0'
-gem 'sitemap_generator'
 gem 'sassc-rails', '~> 1.3.0'
+gem 'sitemap_generator'
 gem 'slim-rails'
 gem 'turbolinks', '~> 5'
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
@@ -37,7 +37,6 @@ group :development do
   gem 'guard-rspec', require: false
   gem 'letter_opener'
   gem 'listen', '>= 3.0.5', '< 3.2'
-  gem 'pry-rails'
   gem 'rubocop', require: false
   gem 'slim_lint', require: false
   gem 'spring'
@@ -51,6 +50,7 @@ group :development, :test do
   gem 'capybara', '~> 2.13'
   gem 'factory_bot_rails'
   gem 'ffaker'
+  gem 'pry-rails'
   gem 'rspec-rails'
   gem 'selenium-webdriver'
 end
