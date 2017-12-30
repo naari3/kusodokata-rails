@@ -2,7 +2,8 @@
 
 class KusosController < ApplicationController
   def new
-    @kuso = Kuso.new.save
+    @kuso = Kuso.new
+    @kuso.save
   end
 
   def show
