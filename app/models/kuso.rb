@@ -2,7 +2,8 @@
 
 class Kuso < ApplicationRecord
   has_secure_token :unique_id
-  after_initialize :kusodokata_parsing, :assign_sentence
+  after_initialize :kusodokata_parsing
+  after_initialize :assign_sentence, if: :new_record?
 
   def assign_sentence
     update(body: kusodokata_sentence)
