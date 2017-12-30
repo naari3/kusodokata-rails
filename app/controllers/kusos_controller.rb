@@ -1,9 +1,8 @@
 # frozen_string_literal: true
 
 class KusosController < ApplicationController
-  def index
-    @kuso = Kuso.new
-    @kuso.save
+  def new
+    @kuso = Kuso.new.save
   end
 
   def show
