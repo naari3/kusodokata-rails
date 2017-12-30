@@ -111,6 +111,8 @@ GEM
       guard (~> 2.1)
       guard-compat (~> 1.1)
       rspec (>= 2.99.0, < 4.0)
+    hoe (3.16.2)
+      rake (>= 0.8, < 13.0)
     htmlentities (4.3.4)
     i18n (0.9.1)
       concurrent-ruby (~> 1.0)
@@ -135,15 +137,19 @@ GEM
     lumberjack (1.0.12)
     mail (2.7.0)
       mini_mime (>= 0.1.1)
-    marky_markov (0.3.5)
-      msgpack
+    markov (0.0.1)
+      hoe (>= 1.7.0)
+      mocha (>= 0.9.1)
+      rspec (>= 1.1.4)
     meta-tags (2.6.0)
       actionpack (>= 3.2.0, < 5.3)
+    metaclass (0.0.4)
     method_source (0.9.0)
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
     minitest (5.10.3)
-    msgpack (1.2.0)
+    mocha (1.3.0)
+      metaclass (~> 0.0.1)
     multi_json (1.12.2)
     mysql2 (0.4.9)
     natto (1.1.1)
@@ -353,7 +359,7 @@ DEPENDENCIES
   letter_opener
   listen (>= 3.0.5, < 3.2)
   locale_kit
-  marky_markov
+  markov
   meta-tags
   mysql2
   natto
