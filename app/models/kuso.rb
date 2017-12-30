@@ -2,26 +2,32 @@
 
 class Kuso < ApplicationRecord
   has_secure_token :unique_id
+  after_initialize :kusodokata_parsing, :assign_sentence
 
-  def sentence
-    kusodokata_sentence.strip
+  def assign_sentence
+    update(body: kusodokata_sentence)
+  end
+
+  def kusodokata_parsing
+    @markov ||= Markov.new
+    tokenized_kusodokata.each { |kusodokata| kusodokata.each { |kusod| @markov.add_with_first(*kusod) } }
   end
 
   private
 
   def kusodokata_sentence
-    ''
+    @markov.generate_from_first.join
   end
 
-  def self.kusodokata_files
-    Dir.glob(Rails.root.join("app", "texts", "*")).map { |f| File.open(f) }
+  def kusodokata_files
+    Dir.glob(Rails.root.join('app', 'texts', '*')).map { |f| File.open(f) }
   end
 
-  def self.kusodokata_texts
+  def kusodokata_texts
     kusodokata_files.map(&:read)
   end
 
-  def self.tokenized_kusodokata
+  def tokenized_kusodokata
     @natto ||= Natto::MeCab.new
     @tokenized_kusodokata ||= kusodokata_files.map do |file|
       textlines = []
@@ -30,10 +36,5 @@ class Kuso < ApplicationRecord
       end
       textlines
     end
-  end
-
-  def self.kusodokata_parsing
-    @markov ||= Markov.new
-    tokenized_kusodokata.each { |kusodokata| kusodokata.each { |kusod| @markov.add_with_first(*kusod) } }
   end
 end

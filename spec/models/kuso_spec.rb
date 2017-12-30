@@ -5,8 +5,8 @@ require 'rails_helper'
 RSpec.describe Kuso, type: :model do
   subject(:kuso) { FactoryBot.build(:kuso) }
 
-  describe '#sentence' do
-    subject { kuso.sentence }
+  describe '#kusodokata_sentence' do
+    subject { kuso.send(:kusodokata_sentence) }
 
     it { is_expected.to be_a String }
   end
