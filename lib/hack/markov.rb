@@ -1,8 +1,12 @@
+# frozen_string_literal: true
+
 class Markov
   private
+
   attr_accessor :firsts
 
   public
+
   def initialize
     @data = {}
     @firsts = []
@@ -19,11 +23,11 @@ class Markov
     add(*items)
   end
 
-  def generate_from_first(length = 1.0/0)
+  def generate_from_first(length = 1.0 / 0)
     item = firsts.random
     result = [item]
     items = data[item]
-    while !items.empty? and result.length < length
+    while !items.empty? && (result.length < length)
       item = items.random
       result.push item
       items = data[item]
