@@ -28,14 +28,20 @@ class Kuso < ApplicationRecord
     kusodokata_files.map(&:read)
   end
 
+  def filtering(text)
+    text.gsub(%r{[\(（「『≪\)）」』≫]}, '')
+  end
+
   def tokenized_kusodokata
-    @natto ||= Natto::MeCab.new
-    @tokenized_kusodokata ||= kusodokata_files.map do |file|
-      textlines = []
-      file.each_line do |n|
-        textlines << @natto.enum_parse(n).map(&:surface)
+    Rails.cache.fetch('tokenized_kusodokata') do
+      @natto ||= Natto::MeCab.new
+      @tokenized_kusodokata ||= kusodokata_files.map do |file|
+        textlines = []
+        file.each_line do |n|
+          textlines << @natto.enum_parse(filtering(n)).map(&:surface)
+        end
+        textlines
       end
-      textlines
     end
   end
 end
