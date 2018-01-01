@@ -2,7 +2,8 @@
 
 class KusosController < ApplicationController
   def new
-    @kuso = Kuso.new
+    @kuso = Kuso.find_by(unique_id: params[:k]) if params[:k]
+    @kuso ||= Kuso.new
     @kuso.save
   end
 
