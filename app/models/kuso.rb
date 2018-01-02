@@ -29,7 +29,7 @@ class Kuso < ApplicationRecord
   end
 
   def filtering(text)
-    text.gsub(%r{[\(（「『≪\)）」』≫]}, '')
+    text.gsub(%r{[\(（「『【≪\)）」』】≫]}, '')
   end
 
   def tokenized_kusodokata
