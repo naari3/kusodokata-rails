@@ -18,5 +18,11 @@
     "vinyl-named": "^1.1.0",
     "webpack": "^2.4.1",
     "webpack-stream": "^3.2.0"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "classlist-polyfill": "^1.2.0",
+    "domready": "^1.0.8",
+    "hyperapp": "^1.0.1"
   }
 }
