@@ -7,11 +7,6 @@ class Kuso < ApplicationRecord
   validates :unique_id, presence: true
   validates :body, presence: true, uniqueness: true
 
-  def kusodokata_parsing
-    @markov ||= Markov.new
-    tokenized_kusodokata.each { |kusodokata| kusodokata.each { |kusod| @markov.add_with_first(*kusod) } }
-  end
-
   private
 
   def set_unique_id
@@ -20,6 +15,11 @@ class Kuso < ApplicationRecord
 
   def set_sentence
     update(body: kusodokata_sentence)
+  end
+
+  def kusodokata_parsing
+    @markov ||= Markov.new
+    tokenized_kusodokata.each { |kusodokata| kusodokata.each { |kusod| @markov.add_with_first(*kusod) } }
   end
 
   def kusodokata_sentence
