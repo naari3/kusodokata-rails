@@ -1,8 +1,8 @@
 // any codes here...
 import 'babel-polyfill';
 require('classlist-polyfill');
-import domready from 'domready';
-import { h, app } from "hyperapp"
+// import domready from 'domready';
+// import { h, app } from "hyperapp"
 
 // const state = {}
 // const actions = {}
