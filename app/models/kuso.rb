@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 class Kuso < ApplicationRecord
-  has_secure_token :unique_id
   after_initialize :kusodokata_parsing
   after_initialize :set_sentence, :set_unique_id, if: :new_record?
 
@@ -16,7 +15,7 @@ class Kuso < ApplicationRecord
   private
 
   def set_unique_id
-    self.unique_id = SecureRandom.urlsafe_base64(20) if unique_id.blank?
+    update(unique_id: SecureRandom.urlsafe_base64(20)) if unique_id.blank?
   end
 
   def set_sentence
