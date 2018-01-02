@@ -9,5 +9,6 @@ class KusosController < ApplicationController
 
   def show
     @kuso = Kuso.find_by(unique_id: params[:unique_id])
+    @kuso ||= Kuso.new
   end
 end
