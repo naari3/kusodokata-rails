@@ -4,8 +4,8 @@ class Kuso < ApplicationRecord
   after_initialize :kusodokata_parsing
   after_initialize :set_sentence, :set_unique_id, if: :new_record?
 
-  validates :unique_id, presence: true
-  validates :body, presence: true, uniqueness: true
+  validates :unique_id, presence: true, uniqueness: true
+  validates :body, presence: true
 
   private
 
