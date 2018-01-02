@@ -3,11 +3,10 @@
 class Kuso < ApplicationRecord
   has_secure_token :unique_id
   after_initialize :kusodokata_parsing
-  after_initialize :assign_sentence, if: :new_record?
+  after_initialize :set_sentence, :set_unique_id, if: :new_record?
 
-  def assign_sentence
-    update(body: kusodokata_sentence)
-  end
+  validates :unique_id, presence: true
+  validates :body, presence: true, uniqueness: true
 
   def kusodokata_parsing
     @markov ||= Markov.new
@@ -15,6 +14,14 @@ class Kuso < ApplicationRecord
   end
 
   private
+
+  def set_unique_id
+    unique_id = SecureRandom.urlsafe_base64(20) if unique_id.blank?
+  end
+
+  def set_sentence
+    update(body: kusodokata_sentence)
+  end
 
   def kusodokata_sentence
     @markov.generate_from_first.join
