@@ -6,7 +6,7 @@
 
 - ruby: v2.4.3
 - node.js: v7.9.0
-  - [yarn](https://github.com/yarnpkg/yarn): v0.22.0
+  - [yarn](https://github.com/yarnpkg/yarn): v0.23.2
 
 ### System dependencies
 
