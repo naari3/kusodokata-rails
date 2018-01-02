@@ -1,0 +1,13 @@
+@import "./mixin";
+
+.clearfix {
+  @include clearfix();
+}
+
+.is-pulled-left {
+  float: left;
+}
+
+.is-pulled-right {
+  float: right;
+}

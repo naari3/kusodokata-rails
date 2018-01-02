@@ -1,0 +1,41 @@
+// Font size
+$font-size-xsmall: 12px !default;
+$font-size-small: 14px !default;
+$font-size-medium: 16px !default;
+$font-size-large: 20px !default;
+$font-size-xlarge: 24px !default;
+
+$line-height: 1.3;
+
+// Colors
+$color-dark-gray: #333333 !default;
+$color-gray: #777777 !default;
+$color-light-gray: #cecece !default;
+$color-snow-white: #f5f5f5 !default;
+$color-white: #ffffff !default;
+$color-orange: #ff8000 !default;
+$color-blue: #4990e2 !default;
+$color-red: #d0021b !default;
+$color-rank-first: #fbcf00 !default;
+$color-rank-second: #d2d3d5 !default;
+$color-rank-third: #c38650 !default;
+
+
+// Sub Colors
+$color-sub-light-orange: #fff9f2 !default;
+
+// Category colors
+$color-category-01: #47b7f0 !default;
+$color-category-02: #55bd37 !default;
+$color-category-03: #b8b471 !default;
+$color-category-04: #8937bd !default;
+$color-category-05: #f04784 !default;
+$color-category-06: #26299b !default;
+$color-category-07: #dc3232 !default;
+
+// Border colors
+$color-border-dark-gray: $color-dark-gray !default;
+$color-border-light-gray: $color-light-gray !default;
+
+// Shadow colors
+$color-shadow-light-gray: $color-light-gray !default;
