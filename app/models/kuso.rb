@@ -16,7 +16,7 @@ class Kuso < ApplicationRecord
   private
 
   def set_unique_id
-    unique_id = SecureRandom.urlsafe_base64(20) if unique_id.blank?
+    self.unique_id = SecureRandom.urlsafe_base64(20) if unique_id.blank?
   end
 
   def set_sentence
