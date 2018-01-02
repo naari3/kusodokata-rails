@@ -43,7 +43,7 @@ GEM
     arel (8.0.0)
     ast (2.3.0)
     bindex (0.5.0)
-    brakeman (4.0.1)
+    brakeman (4.1.1)
     builder (3.2.3)
     byebug (9.1.0)
     canonical-rails (0.2.1)
@@ -398,4 +398,4 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 BUNDLED WITH
-   1.16.0
+   1.16.1
