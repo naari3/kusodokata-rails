@@ -1,0 +1,5 @@
+en:
+  api:
+    application:
+      action_name:
+        key: "value"
