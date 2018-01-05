@@ -1,10 +1,6 @@
 en:
   kusos:
-    index:
-      title: "Index"
     show:
       title: "💩"
     new:
       title: "💩"
-    create:
-      title: "Create"
