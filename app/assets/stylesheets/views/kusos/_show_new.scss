@@ -1,0 +1,25 @@
+.kusos-controller {
+  height: 100%;
+
+  & > body {
+    height: 100%;
+  }
+
+  div {
+    height: 100%;
+  }
+
+  .main {
+    height: 70%;
+    text-align: center;
+  }
+
+  .foot {
+    height: 30%;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

@@ -1,4 +1,12 @@
 .kuso {
   font-size: $font-size-xlarge;
-  margin: 20px;
+
+  margin: 0 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &.loaded {
+    display: none;
+  }
 }

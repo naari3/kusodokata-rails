@@ -4,6 +4,10 @@ import { Kuso } from './kuso'
 
 export const view = (state, actions) =>
   <div>
-    <Kuso state={state} actions={actions} />
-    <ReloadButton state={state} actions={actions} />
+    <div class="main">
+      <Kuso state={state} actions={actions} />
+    </div>
+    <div class="foot">
+      <ReloadButton state={state} actions={actions} />
+    </div>
   </div>

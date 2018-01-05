@@ -1,0 +1,11 @@
+$colors: color-dark-gray, color-gray, color-light-gray, color-snow-white, color-white, color-orange, color-blue, $color-light-orange, color-sub-light-orange;
+$color-values: $color-dark-gray, $color-gray, $color-light-gray, $color-snow-white, $color-white, $color-orange, $color-blue, $color-light-orange, $color-sub-light-orange;
+
+@each $color in $colors {
+  $idx: index($colors, $color);
+  $color-value: nth($color-values, $idx);
+
+  .is-#{$color} {
+    color: $color-value;
+  }
+}
