@@ -9,7 +9,11 @@ export const view = (state, actions) =>
       <Kuso state={state} actions={actions} />
     </div>
     <div class="foot">
-      <ReloadButton state={state} actions={actions} />
-      <ShareTwitterButton state={state} actions={actions} />
+      <div class="reload">
+        <ReloadButton state={state} actions={actions} />
+      </div>
+      <div class="share">
+        <ShareTwitterButton state={state} actions={actions} />
+      </div>
     </div>
   </div>
