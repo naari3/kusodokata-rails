@@ -8,11 +8,15 @@ import { actions } from './actions'
 import { state } from './state'
 import { view } from './views'
 
+import { init } from './init'
+
+
 require('classlist-polyfill')
 
 domready(() => {
-  state.body = document.querySelector('div.kuso').textContent
+  init(state, actions)
   app(state, actions, view, document.getElementById('app'))
+
 })
 
 history.replaceState('', '', '/')

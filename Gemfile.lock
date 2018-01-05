@@ -303,6 +303,7 @@ GEM
       rubocop (>= 0.50.0)
       slim (~> 3.0)
       sysexits (~> 1.1)
+    social-url (1.1.0)
     spoon (0.0.6)
       ffi
     spring (2.0.2)
@@ -389,6 +390,7 @@ DEPENDENCIES
   sitemap_generator
   slim-rails
   slim_lint
+  social-url
   spring
   spring-commands-rspec
   spring-watcher-listen (~> 2.0.0)
