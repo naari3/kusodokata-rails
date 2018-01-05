@@ -1,7 +1,8 @@
 import {h} from 'hyperapp'
 
-export const ReloadButton = ({actions}) =>
+export const ReloadButton = ({state, actions}) =>
   <button
-    class='button button-small button-outline'
-    onclick={actions.reload}>🔃
+    class={'button is-accent ' + (state.isLoading ? 'is-disabled' : '')}
+    onclick={actions.reload}
+    disabled={state.isLoading}>もう一度やりたいぜ。
   </button>
