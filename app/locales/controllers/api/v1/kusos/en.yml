@@ -4,3 +4,5 @@ en:
       kusos:
         show:
           key: "value"
+        new:
+          key: "value"
