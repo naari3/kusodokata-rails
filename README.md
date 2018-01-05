@@ -1,18 +1,21 @@
 # kusodokata-rails
 
+変態糞土方による並外れた文才によって生み出された名文から新しい文章を生み出すアプリ
+
 ## Requirements
 
 ### Language runtimes
 
 - ruby: v2.4.3
-- node.js: v7.9.0
-  - [yarn](https://github.com/yarnpkg/yarn): v0.23.2
+- node.js: v8.9.4
+  - [yarn](https://github.com/yarnpkg/yarn): v1.3.2
 
 ### System dependencies
 
 - [rbenv](https://github.com/rbenv/rbenv)
 - [ndenv](https://github.com/riywo/ndenv)
 - [direnv](https://github.com/direnv/direnv)
+- [mecab](http://taku910.github.io/mecab/)
 
 ## Development
 
