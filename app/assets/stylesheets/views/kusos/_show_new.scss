@@ -22,4 +22,17 @@
     justify-content: center;
     align-items: center;
   }
+
+  .back {
+    z-index: -1;
+    background-image: image-url("620.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    position : fixed;
+    top: 70%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(15px);
+  }
 }
