@@ -6,7 +6,7 @@ Rails.application.routes.draw do
 
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
-      resources :kusos, param: :unique_id, only: %i[show]
+      resources :kusos, param: :unique_id, only: %i[new show]
     end
   end
 end
