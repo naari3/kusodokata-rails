@@ -1,0 +1,6 @@
+en:
+  api:
+    v1:
+      kusos:
+        show:
+          key: "value"
