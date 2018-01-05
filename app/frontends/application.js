@@ -11,7 +11,8 @@ import { view } from './views'
 require('classlist-polyfill')
 
 domready(() => {
-  app(state, actions, view, document.getElementById('reload'))
+  state.body = document.querySelector('div.kuso').textContent
+  app(state, actions, view, document.getElementById('app'))
 })
 
 history.replaceState('', '', '/')
