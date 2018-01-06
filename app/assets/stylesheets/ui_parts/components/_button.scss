@@ -18,7 +18,7 @@ $button-small-padding: $button-small-padding-vertical $button-small-padding-hori
   text-decoration: none;
   cursor: pointer;
   text-align: center;
-  font-weight: 600;
+  // font-weight: 600;
   border-width: 1px;
   border-style: solid;
 
@@ -65,6 +65,18 @@ $button-small-padding: $button-small-padding-vertical $button-small-padding-hori
     &.is-disabled {
       background-color: $color-light-orange;
       border-color: $color-light-orange;
+    }
+
+    &.is-outlined {
+      color: $color-orange;
+      background-color: $color-white;
+      border-color: $color-orange;
+
+      &.is-disabled {
+        color: $color-light-orange;
+        background-color: $color-white;
+        border-color: $color-light-orange;
+      }
     }
   }
 
