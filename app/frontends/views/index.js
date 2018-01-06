@@ -14,6 +14,10 @@ export const view = (state, actions) =>
       </div>
       <div class="share">
         <ShareTwitterButton state={state} actions={actions} />
+        <a
+          class='twitter-share-button'
+          href={state.shareTwitterUrl}>
+        </a>
       </div>
     </div>
   </div>

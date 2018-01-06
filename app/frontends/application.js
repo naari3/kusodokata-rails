@@ -10,13 +10,11 @@ import { view } from './views'
 
 import { init } from './init'
 
-
 require('classlist-polyfill')
 
 domready(() => {
   init(state, actions)
   app(state, actions, view, document.getElementById('app'))
-
 })
 
 history.replaceState('', '', '/')
