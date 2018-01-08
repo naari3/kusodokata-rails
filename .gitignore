@@ -28,6 +28,7 @@
 !/app/assets/javascripts/.keep
 /*.log
 /.vagrant
+/public/assets
 
 # Ignore erd file
 erd.*
