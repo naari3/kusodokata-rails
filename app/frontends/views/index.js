@@ -5,10 +5,10 @@ import { ShareTwitterButton } from './share-twitter-button'
 
 export const view = (state, actions) =>
   <div>
-    <div class="main">
+    <main>
       <Kuso state={state} actions={actions} />
-    </div>
-    <div class="foot">
+    </main>
+    <footer>
       <div class="reload">
         <ReloadButton state={state} actions={actions} />
       </div>
@@ -19,5 +19,5 @@ export const view = (state, actions) =>
           href={state.shareTwitterUrl}>
         </a>
       </div>
-    </div>
+    </footer>
   </div>
