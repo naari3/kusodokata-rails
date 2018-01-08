@@ -1,0 +1,13 @@
+@import "./button";
+
+.button.share {
+  @extend .button;
+  border-width: 0px;
+
+  & > i.icon {
+    font-size: 24px;
+    vertical-align: middle;
+  }
+
+  &.twitter { background-color: #1DA1F2; }
+}
