@@ -6,6 +6,5 @@ export const reload = async (state, actions) => {
     return { body: data.body, uniqueId: data.unique_id }
   }))
   actions.updateShareTwitterUrl()
-  actions.updateShareTwitterButton()
   actions.setLoading(false)
 }
