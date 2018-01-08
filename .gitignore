@@ -45,7 +45,7 @@ config/secrets.yml.key
 # Ignore font files
 app/assets/fonts/*
 !app/assets/fonts/.keep
-app/assets/stylesheets/_news-icons-rails.scss
+app/assets/stylesheets/_kusodokata-icons-rails.scss
 app/views/ui_parts/icons.html.slim
 .fontcustom-manifest.json
 
