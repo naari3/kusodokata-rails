@@ -15,12 +15,18 @@ module.exports = {
     "sourceType": "module"
   },
 
+  "plugins": [
+    "react"
+  ],
+
   "rules": {
 
     "quotes": [
       "error",
       "single"
     ],
+
+    "react/jsx-uses-vars": "warn",
 
     "no-unused-vars": [
       "warn",
