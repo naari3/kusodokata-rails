@@ -1,6 +1,6 @@
 import {h} from 'hyperapp'
 
-export const ShareTwitterButton = ({state, actions}) =>
+export const ShareTwitterButton = ({state}) =>
   <a
     class='_twitter-share-button'
     href={state.shareTwitterUrl}>
