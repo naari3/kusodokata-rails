@@ -1,0 +1,42 @@
+//
+// Icon Font: kusodokata-icons
+//
+
+@font-face {
+  font-family: "kusodokata-icons";
+  src: font-url("kusodokata-icons.eot");
+  src: font-url("kusodokata-icons.eot?#iefix") format("embedded-opentype"),
+       font-url("kusodokata-icons.woff2") format("woff2"),
+       font-url("kusodokata-icons.woff") format("woff"),
+       font-url("kusodokata-icons.ttf") format("truetype"),
+       font-url("kusodokata-icons.svg#kusodokata-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "kusodokata-icons";
+    src: font-url("kusodokata-icons.svg#kusodokata-icons") format("svg");
+  }
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.icon.twitter:before {
+  display: inline-block;
+  font-family: "kusodokata-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-rendering: optimizeLegibility;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+.icon.twitter:before { content: "\f100"; }
