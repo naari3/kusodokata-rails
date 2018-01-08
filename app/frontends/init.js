@@ -1,6 +1,6 @@
 import { _, shareTwitter } from './utils/share_twitter_url'
 
-export const init = (state, actions) => {
+export const init = (state) => {
   const kuso = JSON.parse(document.querySelector('#kuso-info').innerHTML)
   state.body = kuso.body
   state.uniqueId = kuso.unique_id

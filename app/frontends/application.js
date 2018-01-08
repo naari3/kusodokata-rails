@@ -13,7 +13,7 @@ import { init } from './init'
 require('classlist-polyfill')
 
 domready(() => {
-  init(state, actions)
+  init(state)
   app(state, actions, view, document.getElementById('app'))
 })
 
