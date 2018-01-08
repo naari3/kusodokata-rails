@@ -1,8 +1,10 @@
 /* global twttr */
 
 export const updateShareTwitterButton = () => {
-  const renderedTwitterShareButton = document.querySelector('.twitter-share-button')
-  if (renderedTwitterShareButton !== null) renderedTwitterShareButton.parentNode.removeChild(renderedTwitterShareButton)
+  const renderedTwitterShareButtons = document.querySelectorAll('.twitter-share-button')
+  for (let renderedTwitterShareButton of renderedTwitterShareButtons) {
+    renderedTwitterShareButton.parentNode.removeChild(renderedTwitterShareButton)
+  }
 
   const _twitterShareButton = document.querySelector('a._twitter-share-button')
   if (_twitterShareButton !== null) {
