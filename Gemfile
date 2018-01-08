@@ -10,6 +10,7 @@ gem 'canonical-rails'
 gem 'coffee-rails', '~> 4.2'
 gem 'dalli'
 gem 'default_value_for'
+gem 'fontcustom', require: false
 gem 'jbuilder', '~> 2.5'
 gem 'locale_kit'
 gem 'markov'

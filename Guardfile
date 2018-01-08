@@ -8,6 +8,11 @@ guard :bundler do
   watch('Gemfile')
 end
 
+guard :process, name: 'fontcustom', command: %w[./bin/fontcustom compile] do
+  watch(%r{^fontcustom\.yml$})
+  watch(%r{^app/assets/icons/.+$})
+end
+
 guard :process, name: 'gulp', command: %w[gulp watch] do
   watch(%r{^gulpfile\.js$})
   watch(%r{^config/webpack\.js$})
