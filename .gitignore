@@ -58,3 +58,6 @@ config/environments/*.local.yml
 # Ignore sitemap files
 public/sitemap*
 .sass-cache
+/public/packs
+/public/packs-test
+/node_modules

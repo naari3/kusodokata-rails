@@ -1,17 +1,19 @@
 {
   "presets": [
     ["env", {
+      "modules": false,
       "targets": {
-        "browsers": [
-          "Chrome >= 52",
-          "FireFox >= 44",
-          "Safari >= 7",
-          "Explorer 11",
-          "last 4 Edge versions"
-          ]
-        }
-      }
-    ]
+        "browsers": "> 1%",
+        "uglify": true
+      },
+      "useBuiltIns": true
+    }]
   ],
-  "plugins": ["transform-runtime", ["transform-react-jsx", { "pragma": "h" }]]
+
+  "plugins": [
+    "syntax-dynamic-import",
+    "transform-object-rest-spread",
+    ["transform-class-properties", { "spec": true }],
+    ["transform-react-jsx", { "pragma": "h" }]
+  ]
 }
