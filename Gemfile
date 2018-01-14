@@ -26,6 +26,7 @@ gem 'rails-i18n'
 gem 'ridgepole'
 gem 'sass-rails', '~> 5.0'
 gem 'sassc-rails', '~> 1.3.0'
+# gem 'serviceworker-rails'
 gem 'sitemap_generator'
 gem 'slim-rails'
 gem 'turbolinks', '~> 5'
@@ -51,6 +52,10 @@ end
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  # gem 'capistrano'
+  # gem 'capistrano-bundler'
+  # gem 'capistrano-rails'
+  # gem 'capistrano-rbenv'
   gem 'capybara', '~> 2.13'
   gem 'factory_bot_rails'
   gem 'ffaker'
