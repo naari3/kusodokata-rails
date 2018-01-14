@@ -13,9 +13,14 @@ guard :process, name: 'fontcustom', command: %w[./bin/fontcustom compile] do
   watch(%r{^app/assets/icons/.+$})
 end
 
-guard :process, name: 'gulp', command: %w[gulp watch] do
-  watch(%r{^gulpfile\.js$})
-  watch(%r{^config/webpack\.js$})
+# guard :process, name: 'gulp', command: %w[gulp watch] do
+#   watch(%r{^gulpfile\.js$})
+#   watch(%r{^config/webpack\.js$})
+# end
+
+guard :process, name: 'webpacker', command: %w[./bin/webpack -w] do
+  watch(%r{^config/webpacker\.yml$})
+  watch(%r{^config/webpack/.*\.yml$})
 end
 
 guard :rails, host: '0.0.0.0' do
