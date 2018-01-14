@@ -44,15 +44,6 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.tag$/,
-        exclude: /node_modules/,
-        loader: 'riot-tag-loader',
-        enforce: 'pre',
-        options: {
-          template: 'pug',
-        },
-      },
-      {
         test: /\.(js|tag)$/,
         exclude: /node_modules/,
         loader: 'babel-loader',
@@ -62,4 +53,3 @@ module.exports = {
     ],
   },
 };
-
