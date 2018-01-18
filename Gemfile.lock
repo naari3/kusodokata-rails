@@ -58,6 +58,9 @@ GEM
     capistrano-bundler (1.3.0)
       capistrano (~> 3.1)
       sshkit (~> 1.2)
+    capistrano-ndenv (1.1.0)
+      capistrano (>= 3.1.0, < 4)
+      sshkit (~> 1.3)
     capistrano-rails (1.3.1)
       capistrano (~> 3.1)
       capistrano-bundler (~> 1.1)
@@ -80,13 +83,6 @@ GEM
     childprocess (0.8.0)
       ffi (~> 1.0, >= 1.0.11)
     coderay (1.1.2)
-    coffee-rails (4.2.2)
-      coffee-script (>= 2.2.0)
-      railties (>= 4.0.0)
-    coffee-script (2.4.1)
-      coffee-script-source
-      execjs
-    coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
     crass (1.0.2)
     css_parser (1.6.0)
@@ -391,12 +387,12 @@ DEPENDENCIES
   canonical-rails
   capistrano
   capistrano-bundler
+  capistrano-ndenv (~> 1.0)
   capistrano-rails
   capistrano-rbenv
   capistrano-yarn
   capistrano3-puma
   capybara (~> 2.13)
-  coffee-rails (~> 4.2)
   dalli
   database_rewinder
   default_value_for

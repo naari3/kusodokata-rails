@@ -7,7 +7,6 @@ git_source(:github) do |repo_name|
 end
 
 gem 'canonical-rails'
-gem 'coffee-rails', '~> 4.2'
 gem 'dalli'
 gem 'default_value_for'
 gem 'fontcustom', require: false
@@ -57,6 +56,7 @@ group :development, :test do
   gem 'capistrano-bundler', require: false
   gem 'capistrano-rails', require: false
   gem 'capistrano-rbenv', require: false
+  gem 'capistrano-ndenv', '~> 1.0', require: false
   gem 'capistrano-yarn', require: false
   gem 'capistrano3-puma', require: false
   gem 'capybara', '~> 2.13'
