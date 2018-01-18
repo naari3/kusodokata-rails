@@ -2,7 +2,19 @@
 lock "~> 3.10.1"
 
 set :application, "my_app_name"
-set :repo_url, "git@example.com:me/my_repo.git"
+
+set :repo_url, ENV.fetch('REPO', 'https://github.com/naari3/kusodokata-rails.git')
+set :branch, ENV.fetch('BRANCH', 'master')
+
+set :application, 'kusodokata'
+set :rbenv_type, :user
+set :rbenv_ruby, File.read('.ruby-version').strip
+set :migration_role, :app
+
+append :linked_files, '.env.production', 'public/robots.txt'
+append :linked_dirs, 'vendor/bundle', 'node_modules', 'public/system'
+
+set :keep_releases, 5
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
