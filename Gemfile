@@ -53,10 +53,11 @@ end
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
-  # gem 'capistrano'
-  # gem 'capistrano-bundler'
-  # gem 'capistrano-rails'
-  # gem 'capistrano-rbenv'
+  gem 'capistrano'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano-rbenv'
+  gem 'capistrano-yarn'
   gem 'capybara', '~> 2.13'
   gem 'factory_bot_rails'
   gem 'ffaker'
