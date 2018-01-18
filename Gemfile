@@ -9,6 +9,7 @@ end
 gem 'canonical-rails'
 gem 'dalli'
 gem 'default_value_for'
+gem 'dotenv-rails'
 gem 'fontcustom', require: false
 gem 'jbuilder', '~> 2.5'
 gem 'locale_kit'
