@@ -61,3 +61,8 @@ public/sitemap*
 /public/packs
 /public/packs-test
 /node_modules
+
+# Ignore Capistrano customizations
+config/deploy/*
+
+# Ignore envs for production
