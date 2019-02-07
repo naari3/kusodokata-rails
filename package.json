@@ -35,7 +35,7 @@
     "coffeescript": "1.12.7",
     "domready": "^1.0.8",
     "hyperapp": "^1.0.1",
-    "node-fetch": "^1.7.3",
+    "node-fetch": "^2.0.0",
     "share-twitter": "^0.0.1",
     "uglify-es": "^3.3.4",
     "whatwg-fetch": "^2.0.3"
