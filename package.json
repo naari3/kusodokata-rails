@@ -21,7 +21,7 @@
     "eslint-plugin-standard": "3.0.1",
     "gulp": "3.9.1",
     "gulp-eslint": "3.0.1",
-    "gulp-plumber": "1.2.0",
+    "gulp-plumber": "1.2.1",
     "utils-merge": "1.0.1",
     "vinyl-named": "1.1.0",
     "webpack": "3.10.0",
