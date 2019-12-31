@@ -43,7 +43,7 @@ group :development do
   gem 'guard-rails', require: false
   gem 'guard-rspec', require: false
   gem 'letter_opener'
-  gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'listen', '>= 3.0.5', '< 3.3'
   gem 'rubocop', require: false
   gem 'slim_lint', require: false
   gem 'spring'
