@@ -14,7 +14,7 @@
     "babel-runtime": "6.26.0",
     "eslint": "4.18.2",
     "eslint-config-standard": "14.1.0",
-    "eslint-plugin-import": "2.8.0",
+    "eslint-plugin-import": "2.20.0",
     "eslint-plugin-node": "5.2.1",
     "eslint-plugin-promise": "3.6.0",
     "eslint-plugin-react": "7.5.1",
