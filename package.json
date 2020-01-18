@@ -32,7 +32,7 @@
     "@rails/webpacker": "^3.2.0",
     "babel-polyfill": "^6.26.0",
     "classlist-polyfill": "^1.2.0",
-    "coffeescript": "1.12.7",
+    "coffeescript": "2.5.0",
     "domready": "^1.0.8",
     "hyperapp": "^1.0.1",
     "node-fetch": "^1.7.3",
